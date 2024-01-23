@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="../Style/Carrito.css">
+</head>
+<body>
+
+    <nav style="background-color: #EAEDED;"
+        class="relative flex w-full flex-wrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div>
+                <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
+                    href="../index.html">
+                    <img src="../img/e801a0d1-0eb6-4929-b4df-7d33b443e64d.jpeg" class="rounded-full"
+                        style="height: 50px; width: 50px" alt="" loading="lazy" />
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="section-carrito">
+            <h1 id="titulo" class="text-center titulo">Carrito</h1>
+
+        </section>
+        <div class="pagar-carrito">
+            <p>Total a pagar:</p>
+            <button type="button" id="btnTotal">$0</button>
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="../Js/carrito.js"></script>
+</body>
+</html>
